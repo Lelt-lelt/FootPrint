@@ -46,4 +46,7 @@
 	font-family: S1; 
 	src: url('fonts/Shadow_Into_Light/ShadowsIntoLight-Regular.ttf') ;
 }
-
+@font-face{
+	font-family: G; 
+	src: url('fonts/Great_Vibes/GreatVibes-Regular.ttf') ;
+}
