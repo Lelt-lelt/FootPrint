@@ -42,17 +42,16 @@
 	<!-- navigation -->
 	<div id="banner">
 		<nav class="navbar navbar-expand-lg navbar-light">
-			<img src="images/logo2.png" width="100" height="70" class="d-md-block d-sm-block d-lg-none">
+			<img src="images/logo.png" width="100" height="70" class="d-md-block d-sm-block d-lg-none">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav mx-auto">
-					<a class="nav-item nav-link active mr-lg-3" href="index.html">Home</a>
-					<a class="nav-item nav-link mr-lg-3" href="about.html">About</a>
-					<a class="nav-item nav-link mr-lg-3" href="destination.html">Our Tours</a>
-					<a class="nav-item nav-link mr-lg-3" href="destination.html">Gallery</a>
-					<a class="nav-item nav-link mr-lg-3" href="tip.html">Blog</a>
+					<a class="nav-item nav-link active mr-lg-3 mr-md-none " href="index.html">Home</a>
+					<a class="nav-item nav-link mr-lg-3" href="tour.html">Our Tours</a>
+					<a class="nav-item nav-link mr-lg-3" href="gallery.html">Gallery</a>
+					<a class="nav-item nav-link mr-lg-3" href="blog.html">Blog</a>
 					<a class="nav-item nav-link" href="contact.html">Contact</a>
 				</div>
 			</div>
@@ -60,7 +59,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-10 text-center d-lg-block d-none">
-					<img src="images/logo2.png" style="width: 250px; height: 170px;margin-top: 70px;">
+					<img src="images/logo.png" style="width: 250px; height: 170px;margin-top: 70px;">
 				</div>
 			</div>
 		</div>
@@ -71,33 +70,33 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12 mt-md-5 mt-sm-5 mt-lg-auto">
-					<div id="content">
+					<div id="content" onclick="relocate_tour1()" style="cursor: pointer;">
 						<img src="images/p1.jpeg" height="400" class="img-fluid">
-						<div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-							<h5 class="card-title text-center">Paris</h5>
+						<div class="card-img-overlay h-25 d-flex flex-column justify-content-end">
+							<h5 class="card-title text-center"><b>Eiffle Tower, French</b></h5>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 mt-md-5 mt-sm-5 mt-lg-auto">
-					<div id="content">
-						<img src="images/p1.jpeg" height="400" class="img-fluid">
-						<div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-							<h5 class="card-title text-center">Paris</h5>
+					<div id="content" onclick="relocate_tour2()" style="cursor: pointer;">
+						<img src="images/p2.jpeg" height="400" class="img-fluid">
+						<div class="card-img-overlay h-25 d-flex flex-column justify-content-end">
+							<h5 class="card-title text-center"><b>Oslo, Norway</b></h5>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 mt-md-5 mt-sm-5 mt-lg-auto">
-					<div id="content">
-						<img src="images/p1.jpeg" height="400" class="img-fluid">
-						<div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-							<h5 class="card-title text-center">Paris</h5>
+					<div id="content" onclick="relocate_tour3()" style="cursor: pointer;">
+						<img src="images/p3.jpg" height="400" class="img-fluid">
+						<div class="card-img-overlay h-25 d-flex flex-column justify-content-end">
+							<h5 class="card-title text-center"><b>Kalaw, Myanmar</b></h5>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="text-center my-5">Other Tours<i class="fas fa-arrow-right ml-3 text-info"></i></div>
+					<div class="text-center my-5" onclick="relocate_tour()" style="cursor: pointer;">Other Tours<i class="fas fa-arrow-right ml-3 text-info"></i></div>
 				</div>
 			</div>
 		</div>
@@ -107,7 +106,7 @@
 	<div class="container" id="allfont">
 		<div class="row">
 			<div class="col-lg-6 col-md-12 col-sm-12">
-				<img src="images/p2.jpeg" class="img-fluid" style="width: 90%;">
+				<img src="images/p4.jpeg" class="img-fluid" style="width: 90%;">
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12">
 				<h2 class="mt-4 mb-4">Discover New Horizon</h2>
@@ -195,22 +194,22 @@
 		<div class="row my-5">
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="box2">
-					<img src="images/p3.jpeg" style="width: 47%;height: 353px;" class="img-fluid mr-5 float-left">
-					<h4 class="mt-4">Spain, Benidorm</h4>
-					<p class="text-muted"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning mr-3"></i>4 customers review</p>
-					<p>Benidorm is a buzzing resort with a big reputation for beach holidays. Situated in sunny Costa Blanca, the town is one of the original Spanish beach resorts...</p>
-					<input type="button" class="btn my-3" value="Buy This Tour" onclick=" relocate_dest()">
+					<img src="images/p8.4.jpg" style="width: 47%;height: 399px;" class="img-fluid mr-5 float-left">
+					<h4 class="mt-5">Ko Samui</h4>
+					<p class="text-muted"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning mr-3"></i>Rating & review</p>
+					<p>ဒီကျွန်းလေးကိုတော့ Koh Samui လို့ခေါ်ပြီး မြန်မာလို ဆိုရင်တော့ စမွေလို့ အသံထွက်ပါတယ်.. ကော့ဆိုတာကတော့ ထိုင်းလို ကျွန်းကိုဆိုလိုတာပါ.. ထိုင်းနိုင်ငံတောင်ပိုင်း မှာ တည်ရှိပြီး ထိုင်းရဲ့ တတိယ အကြီးဆုံး ကျွန်းဖြစ်ပါတယ်.. သူဘေးနားမှာ ပါတီ ကျွန်းလို့ နာမည်ကြီး တဲ့ Koh Phangan နဲ့ လိပ်ကျွန်းလို့ ခေါ်တဲ့ သိပ်လှတဲ့ Koh Tao ကျွန်းရှိပါတယ်..</p>
+					<input type="button" class="btn my-lg-3" value="Read More" onclick=" relocate_tour4()">
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="box2">
-					<img src="images/p3.jpeg" style="width: 47%;height: 353px;" class="img-fluid mr-5 float-left">
-					<h4 class="mt-4">Spain, Benidorm</h4>
-					<p class="text-muted"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning mr-3"></i>4 customers review</p>
-					<p>Benidorm is a buzzing resort with a big reputation for beach holidays. Situated in sunny Costa Blanca, the town is one of the original Spanish beach resorts...</p>
-					<input type="button" class="btn my-3" value="Buy This Tour" onclick=" relocate_dest()">
+					<img src="images/p5.jpeg" style="width: 47%;height: 399px;" class="img-fluid mr-5 float-left">
+					<h4 class="mt-5">Bali : Island of the Gods</h4>
+					<p class="text-muted"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning mr-3"></i>5 customers review</p>
+					<p>ဘာလီကို အရင်ကတော့ နတ်ဘုရားတို့ရဲ့ ကျွန်းနိဗ္ဗာန်ဘုံလေး စသည်ဖြင့်တင်စားပြီး ခေါ်ဝေါ်ကြပေမယ့် ဒီဘက်ခေတ်မှာတော့ The most Photogenic Island & The most Instagrammable place ဆိုပြီးတော့ ဆိုလာကြတယ် selfie  မရိုက်ဖြစ်လောက်အောင်ကို နောက်ခံရူမျော်ခင်းတွေက သိပ်ကိုလှပလွန်းနေတယ်...</p>
+					<input type="button" class="btn my-lg-3" value="Read More" onclick=" relocate_tour5()">
 				</div>
 			</div>
 		</div>
@@ -221,12 +220,12 @@
 		<div class="container-fluid" id="allfont">
 			<div class="row mt-5">
 				<div class="centered">
-					<h2>First-class Impressons</h2>
+					<h2>First-Class Impressions</h2>
 					<h4>are waiting for you.</h4>
-					<p>Our agency offers travelers various tours and excursions with destinations all over the world. Browse our website to find your dream tour!</p>
-					<input type="button" class="btn my-3" value="Buy This Tour" onclick=" relocate_dest()">
+					<p>Our team members offer travelers various tours and excursions with destinations all over the world. Browse our website to find your dream tour!</p>
+					<input type="button" class="btn my-3" value="Find your tour" onclick=" relocate_tour()">
 				</div>
-				<img src="images/banner2.jpg" class="img-fluid" style="width: 100%;height: 400px;">
+				<img src="images/banner1.JPG" class="img-fluid" style="width: 100%;height: 400px;">
 			</div>
 		</div>
 	</div>
@@ -241,14 +240,14 @@
 		<div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-12">
 				<div class="shadow text-center p-3 mb-5 bg-white">
-					<img src="images/p7.jpeg" width="87" height="87" class="rounded-circle img-fluid">
+					<img src="images/h1.jpeg" width="87" height="87" class="rounded-circle img-fluid">
 					<p class="my-4">Just wanted to say many, many thanks for helping me set up an amazing Costa Rican adventure! My nephew and I had a great time! All of the accommodations were perfect, thank you!</p>
 					<h5 class="mb-4 text-info">Rupert Wood</h5>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
 				<div class="shadow text-center p-3 mb-5 bg-white">
-					<img src="images/p8.jpeg" width="87" height="87" class="rounded-circle img-fluid">
+					<img src="images/h2.jpeg" width="87" height="87" class="rounded-circle img-fluid">
 					<p class="my-4">I wanted to thank you very much for planning the trip to France for my sister and me. It was amazing and exceeded my expectations! We had a wonderful time and were very pleased.</p>
 					<h5 class="mb-4 text-info">Catherine Williams</h5>
 				</div>
@@ -256,7 +255,7 @@
 			<div class="d-lg-none col-md-3"></div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
 				<div class="shadow text-center p-3 mb-5 bg-white">
-					<img src="images/p9.jpeg" width="87" height="87" class="rounded-circle img-fluid">
+					<img src="images/h3.jpeg" width="87" height="87" class="rounded-circle img-fluid">
 					<p class="my-4">We had a marvelous time in our travels to Madagascar, Zimbabwe, and Botswana, we had just wonderful experiences. Your service was amazing and everyone was very attentive!</p>
 					<h5 class="mb-4 text-info">Sam Peterson</h5>
 				</div>
@@ -271,14 +270,14 @@
 				<h2 class="text-center mb-5">7 Years of Following The Dream</h2>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-				<img src="images/p4.jpeg" style="width: 100%; height: auto;" class="img-fluid" >
+				<img src="images/p10.jpeg" style="width: 100%; height: auto;" class="img-fluid" >
 				<div class="centered1" style="background-color: #fff;padding: 13% 26%;">
 					<h2 class="text-center"><b>12</b></h2>
 					<h5 class="text-center"><b>International <br>Awards</b></h5>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-				<img src="images/p4.jpeg" style="width: 100%; height: auto;" class="img-fluid" >
+				<img src="images/p10.jpeg" style="width: 100%; height: auto;" class="img-fluid" >
 				<div class="centered1" style="background-color: #fff;padding: 13% 30%;">
 					<h2 class="text-center"><b>500+</b></h2>
 					<h5 class="text-center"><b>Happy <br>Travelers</b></h5>
@@ -286,7 +285,7 @@
 			</div>
 			<div class="d-lg-none col-md-3"></div>
 			<div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-				<img src="images/p4.jpeg" style="width: 100%; height: auto;" class="img-fluid" >
+				<img src="images/p10.jpeg" style="width: 100%; height: auto;" class="img-fluid" >
 				<div class="centered1" style="background-color: #fff;padding: 13% 30%;">
 					<h2 class="text-center"><b>42</b></h2>
 					<h5 class="text-center"><b>Team <br>Members</b></h5>
@@ -300,8 +299,8 @@
 		<div class="container-fluid" id="allfont">
 			<div class="row mt-5">
 				<div class="centered">
-					<h2>Sign Up for 25% Discount</h2>
-					<p>Want to get an instant discount for your next tour? Leave your email and sign up for our newsletter with 25% off all our offers.</p>
+					<h2>Sign Up for New Information</h2>
+					<p>Want to get a new information for your next tour? Leave your email and sign up for our newsletter.</p>
 					<form>
 						<div class="form-group">
 							<input type="email" class="form-control ml-5 float-left" id="exampleInputEmail1" value="Enter Your Email" aria-describedby="emailHelp" style="background-color: #5D8A8A; width: 400px;height: 60px;">
@@ -310,7 +309,7 @@
 						
 					</form>
 				</div>
-				<img src="images/banner2.jpg" class="img-fluid" style="width: 100%;height: 400px;">
+				<img src="images/banner2.png" class="img-fluid" style="width: 100%;height: 400px;">
 			</div>
 		</div>
 	</div>
@@ -322,134 +321,78 @@
 				<h2>Latest Blog Posts</h2>
 			</div>
 		</div>
-		<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active" data-interval="10000">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12 mb-5">
-							<img src="images/p4.jpeg" style="width: 100%; height: 450px;" class="img-fluid" >
-							<div class="card-img-overlay" style="margin-top: 330px;">
-								<div class="shadow py-4 mx-3" id="shadow1" onclick="relocate_blog1()" style="background-color: #fff; height: 130px;">
-									<h5 class="text-center"><b>လူငယ် နှင့် ခရီးသွားခြင်း</b></h5>
-									<h5 class="text-info text-center">April 17, 2020</h5>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 mb-5">
-							<img src="images/p4.jpeg" style="width: 100%; height: 450px;" class="img-fluid" >
-							<div class="card-img-overlay" style="margin-top: 330px;">
-								<div class="shadow py-4 mx-3" id="shadow1" onclick="relocate_blog2()" style="background-color: #fff; height: 130px;">
-									<h5 class="text-center"><b>နိုင်ငံခြားခရီးမှာ ပတ်စပိုစ့် ပျောက်သွားခဲ့ရင် ဘယ်လိုလုပ်ရမလဲ..?</b></h5>
-									<h5 class="text-info text-center">April 17, 2020</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item" data-interval="2000">
-					<div class="row" id="blog1">
-						<div class="col-lg-6 col-md-6 col-sm-12 mb-5">
-							<img src="images/p4.jpeg" style="width: 100%; height: 450px;" class="img-fluid" >
-							<div class="card-img-overlay" style="margin-top: 330px;">
-								<div class="shadow py-4 mx-3" id="shadow1" onclick="relocate_blog3()" style="background-color: #fff; height: 130px;">
-									<h5 class="text-center"><b>လူငယ်တွေ ဘယ်လို ခရီးသွားကြမလဲ..?</b></h5>
-									<h5 class="text-info text-center">April 17, 2020</h5>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 mb-5">
-							<img src="images/p4.jpeg" style="width: 100%; height: 450px;" class="img-fluid" >
-							<div class="card-img-overlay" style="margin-top: 330px;">
-								<div class="shadow py-4 mx-3" id="shadow1" onclick="relocate_blog4()" style="background-color: #fff; height: 130px;">
-									<h5 class="text-center"><b>တကမ္ဘာလုံးကဟိုတယ်တွေကို ကိုယ်တိုင် Booking ဘယ်လိုတင်ကြမလဲ..?</b></h5>
-									<h5 class="text-info text-center">April 17, 2020</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="row" id="blog2">
-						<div class="col-lg-6 col-md-6 col-sm-12 mb-5">
-							<img src="images/p4.jpeg" style="width: 100%; height: 450px;" class="img-fluid" >
-							<div class="card-img-overlay" style="margin-top: 330px;">
-								<div class="shadow py-4 mx-3" id="shadow1" onclick="relocate_blog5()" style="background-color: #fff; height: 130px;">
-									<h5 class="text-center"><b>ဆောင်ရန် ရှောင်ရန်များနဲ့ ဥရောပခရီး</b></h5>
-									<h5 class="text-info text-center">April 17, 2020</h5>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 mb-5">
-							<img src="images/p4.jpeg" style="width: 100%; height: 450px;" class="img-fluid" >
-							<div class="card-img-overlay" style="margin-top: 330px;">
-								<div class="shadow py-4 mx-3" id="shadow1" onclick="relocate_blog6()" style="background-color: #fff; height: 130px;">
-									<h5 class="text-center"><b>ဥရောပကို ရထားနဲ့ပတ်ကြမယ်</b></h5>
-									<h5 class="text-info text-center">April 17, 2020</h5>
-								</div>
-							</div>
-						</div>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 mb-5">
+				<img src="images/t1.jpg" style="width: 100%; height: 450px;" class="img-fluid" >
+				<div class="card-img-overlay" style="margin-top: 330px;">
+					<div class="shadow py-4 mx-3" id="shadow1" onclick="relocate_blog1()" style="background-color: #fff; height: 130px;">
+						<h5 class="text-center"><b>လူငယ် နှင့် ခရီးသွားခြင်း</b></h5>
+						<h5 class="text-info text-center">April 17, 2020</h5>
 					</div>
 				</div>
 			</div>
-			<a class="carousel-control-prev text-dark" href="#carouselExampleInterval" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next text-dark" href="#carouselExampleInterval" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
+			<div class="col-lg-6 col-md-6 col-sm-6 mb-5">
+				<img src="images/t2.jpeg" style="width: 100%; height: 450px;" class="img-fluid" >
+				<div class="card-img-overlay" style="margin-top: 330px;">
+					<div class="shadow py-4 mx-3" id="shadow1" onclick="relocate_blog2()" style="background-color: #fff; height: 130px;">
+						<h5 class="text-center"><b>နိုင်ငံခြားခရီးမှာ ပတ်စပိုစ့် ပျောက်သွားခဲ့ရင် ဘယ်လိုလုပ်ရမလဲ..?</b></h5>
+						<h5 class="text-info text-center">April 10, 2020</h5>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid bg-light my-5">
-		<div id="carouselExampleInterval1" class="carousel slide py-5" data-ride="carousel">
+	<!-- gallery -->
+	<div class="container-fluid bg-light mt-5" id="allfont">
+		<h6 class="text-center py-3"><b>Gallery</b></h6>
+		<div id="carouselExampleInterval1" class="carousel slide pb-5" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active" data-interval="10000">
 					<div class="row">
 						<div class="col-lg-3 col-md-3 col-sm-3">
-							<img src="images/p3.jpeg" style="width: 100%; height: auto;" class="img-fluid">
+							<img src="images/p8.5.jpg" style="width: 100%; height: 200px;" class="img-fluid">
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3">
-							<img src="images/p3.jpeg" style="width: 100%; height: auto;" class="img-fluid">
+							<img src="images/p8.4.jpg" style="width: 100%; height: 200px;" class="img-fluid">
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3">
-							<img src="images/p3.jpeg" style="width: 100%; height: auto;" class="img-fluid">
+							<img src="images/p3.jpg" style="width: 100%; height: 200px;" class="img-fluid">
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3">
-							<img src="images/p3.jpeg" style="width: 100%; height: auto;" class="img-fluid">
+							<img src="images/p2.jpeg" style="width: 100%; height: 200px;" class="img-fluid">
 						</div>
 					</div>
 				</div>
 				<div class="carousel-item" data-interval="2000">
 					<div class="row">
 						<div class="col-lg-3 col-md-3 col-sm-3">
-							<img src="images/p3.jpeg" style="width: 100%; height: auto;" class="img-fluid">
+							<img src="images/p10.jpeg" style="width: 100%; height: 200px;" class="img-fluid">
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3">
-							<img src="images/p3.jpeg" style="width: 100%; height: auto;" class="img-fluid">
+							<img src="images/banner1.JPG" style="width: 100%; height: 200px;" class="img-fluid">
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3">
-							<img src="images/p3.jpeg" style="width: 100%; height: auto;" class="img-fluid">
+							<img src="images/p4.jpeg" style="width: 100%; height: 200px;" class="img-fluid">
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3">
-							<img src="images/p3.jpeg" style="width: 100%; height: auto;" class="img-fluid">
+							<img src="images/p8.3.jpeg" style="width: 100%; height: 200px;" class="img-fluid">
 						</div>
 					</div>
 				</div>
 				<div class="carousel-item">
 					<div class="row">
 						<div class="col-lg-3 col-md-3 col-sm-3">
-							<img src="images/p3.jpeg" style="width: 100%; height: auto;" class="img-fluid">
+							<img src="images/p8.2.jpeg" style="width: 100%; height: 200px;" class="img-fluid">
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3">
-							<img src="images/p3.jpeg" style="width: 100%; height: auto;" class="img-fluid">
+							<img src="images/p3.1.jpg" style="width: 100%; height: 200px;" class="img-fluid">
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3">
-							<img src="images/p3.jpeg" style="width: 100%; height: auto;" class="img-fluid">
+							<img src="images/p2.jpeg" style="width: 100%; height: 200px;" class="img-fluid">
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3">
-							<img src="images/p3.jpeg" style="width: 100%; height: auto;" class="img-fluid">
+							<img src="images/p1.jpeg" style="width: 100%; height: 200px;" class="img-fluid">
 						</div>
 					</div>
 				</div>
@@ -464,15 +407,84 @@
 			</a>
 		</div>
 	</div>
+
+	<!-- footer -->
+	<div class="container-fluid">
+		<div class="row my-3">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<hr style="border-color: #000;">
+			</div>
+		</div>
+	</div>
+	<div class="container" id="allfont">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+				<h5 class="pb-3">ABOUT US</h5>
+				<p>
+					Wonder Tour is committed to bringing our clients the best in value and quality travel arrangements. We are passionate about travel and sharing the world's wonders with you.
+				</p>
+			</div>
+
+			<div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+				<h5 class="pb-3">DESTINATION</h5>
+				<ul class="text-info">
+					<li>Europe</li>
+					<li>Asia</li>
+					<li>Canada</li>
+					<li>Myanmar</li>
+				</ul>
+			</div>
+
+			<div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+				<h5 class="pb-3">GET IN TOUCH</h5>
+				<ul class="list-unstyled">
+					<li>
+						<i class="fas fa-phone pr-3 text-info"></i>+95 9123456789
+					</li>
+					<li>
+						<i class="fas fa-envelope pr-3 text-info"></i>info@footprint.com
+					</li>
+					<li>
+						<i class="fas fa-comment-alt pr-3 text-info"></i>Live Chat
+					</li>
+				</ul>	
+			</div>
+
+			<div class="my-3 col-lg-12 col-md-12 col-sm-12">
+				<p class="float-left">Copyright @ <a href="#">FootPrint Travel</a></p>
+				<p class="float-right d-lg-block d-md-block d-sm-none">Made by Group-2/Symphony-6/Lei Lei Win Thant</p>
+			</div>
+		</div>
+	</div>
+
 	<script>
 		function relocate_contact()
 		{
 			location.href = "contact.html";
 		} 
-
-		function relocate_dest()
+		function relocate_tour()
 		{
-			location.href = "destination.html";
+			location.href = "tour.html";
+		} 
+		function relocate_tour1()
+		{
+			location.href = "tour1.html";
+		} 
+		function relocate_tour2()
+		{
+			location.href = "tour2.html";
+		} 
+		function relocate_tour3()
+		{
+			location.href = "tour3.html";
+		} 
+		function relocate_tour4()
+		{
+			location.href = "tour4.html";
+		} 
+		function relocate_tour5()
+		{
+			location.href = "tour5.html";
 		} 
 		function relocate_blog1()
 		{
@@ -509,54 +521,6 @@
     }
 });
 </script>
-
-<!-- footer -->
-<div class="container-fluid">
-	<div class="row my-3">
-		<div class="col-lg-12 col-md-12 col-sm-12">
-			<hr style="border-color: #000;">
-		</div>
-	</div>
-</div>
-<div class="container" id="allfont">
-	<div class="row">
-		<div class="col-lg-6 col-md-12 col-sm-12 mt-3">
-			<h5 class="pb-3">ABOUT US</h5>
-			<p>
-				Wonder Tour is committed to bringing our clients the best in value and quality travel arrangements. We are passionate about travel and sharing the world's wonders with you.
-			</p>
-		</div>
-
-		<div class="col-lg-3 col-md-6 col-sm-6 mt-3">
-			<h5 class="pb-3">DESTINATION</h5>
-			<ul class="text-info">
-				<li>Europe</li>
-				<li>Asia</li>
-				<li>Canada</li>
-				<li>Myanmar</li>
-			</ul>
-		</div>
-
-		<div class="col-lg-3 col-md-6 col-sm-6 mt-3">
-			<h5 class="pb-3">GET IN TOUCH</h5>
-			<ul class="list-unstyled">
-				<li>
-					<i class="fas fa-phone pr-3 text-info"></i>+95 9123456789
-				</li>
-				<li>
-					<i class="fas fa-envelope pr-3 text-info"></i>info@footprint.com
-				</li>
-				<li>
-					<i class="fas fa-comment-alt pr-3 text-info"></i>Live Chat
-				</li>
-			</ul>	
-		</div>
-
-		<div class="my-3 col-lg-12 col-md-12 col-sm-12">
-			<p class="text-center">Copyright @ <a href="#">Made with &#10084;</a></p>
-		</div>
-	</div>
-</div>
 
 </body>
 </html>
